@@ -1,0 +1,102 @@
+button {
+  color: aliceblue;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+p {
+  display: inline-block;
+}
+
+.QuoteBox {
+  margin: auto;
+  width: 60%;
+  /* width: 600px; */
+  background-color: white;
+  border-radius: 20;
+  box-shadow: 1px 1px 10px black;
+  overflow: hidden;
+  position: static;
+}
+
+.boxInfo {
+  padding: 10px 20px;
+  display: grid;
+}
+
+.container_btn {
+  text-align: end;
+}
+.boxInfo > picture > p {
+  margin: 10px 0;
+  font-size: 20px;
+  padding-left: auto;
+  width: 439px;
+}
+.boxInfo > p {
+  text-align: end;
+  /* margin: 10px 0; */
+  font-size: 24px;
+  font-weight: bold;
+}
+.boxInfo > .btn {
+  display: flex;
+  justify-content: end;
+}
+.btn {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid;
+  box-shadow: 1px 1px 30px gainsboro;
+}
+
+picture {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+picture > svg {
+  margin: 10px 0;
+}
+
+@media (max-width: 375px) {
+  .QuoteBox {
+    width: 300px;
+  }
+  /* .boxInfo > picture > p {
+    gap: 20px;
+  } */
+}
+
+@media (max-width: 425px) {
+  .QuoteBox {
+    width: 90%;
+  }
+
+  /* .boxInfo > picture > p {
+    gap: 20px;
+  } */
+}
+
+@media (max-width: 767px) {
+  .QuoteBox {
+    width: 370px;
+  }
+  .boxInfo > picture > p {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .QuoteBox {
+    width: 650px;
+  }
+}
